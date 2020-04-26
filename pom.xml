@@ -5,9 +5,9 @@
 	<groupId>com.example</groupId>
 	<artifactId>devops</artifactId>
 
-	<version>1.1.6-SNAPSHOT</version>
+	<version>1.2.1-SNAPSHOT</version>
 
-	<packaging>war</packaging> 
+	<packaging>war</packaging>
 	<name>devops</name>
 	<description>DevOps Demo Project</description>
 
@@ -38,11 +38,11 @@
 		</snapshotRepository>
 	</distributionManagement>
 
-		<scm>
+	<scm>
 		<connection>scm:git:git@github.com:arumugam1983/sixdevops.git</connection>
 		<developerConnection>scm:git:git@github.com:arumugam1983/sixdevops.git</developerConnection>
 		<url>git@github.com:arumugam1983/sixdevops.git</url>
-			<tag>HEAD</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 
@@ -68,6 +68,12 @@
 		</dependency>
 		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-devtools</artifactId> 
 			<optional>true</optional> </dependency> -->
+
+		<!-- spring boot logging dependency -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-logging</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
