@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
@@ -7,7 +9,7 @@
 
 	<version>1.1.6-SNAPSHOT</version>
 
-	<packaging>war</packaging> 
+	<packaging>war</packaging>
 	<name>devops</name>
 	<description>DevOps Demo Project</description>
 
@@ -38,11 +40,11 @@
 		</snapshotRepository>
 	</distributionManagement>
 
-		<scm>
+	<scm>
 		<connection>scm:git:git@github.com:arumugam1983/sixdevops.git</connection>
 		<developerConnection>scm:git:git@github.com:arumugam1983/sixdevops.git</developerConnection>
 		<url>git@github.com:arumugam1983/sixdevops.git</url>
-			<tag>HEAD</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 
@@ -68,6 +70,12 @@
 		</dependency>
 		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-devtools</artifactId> 
 			<optional>true</optional> </dependency> -->
+
+		<!-- spring boot logging dependency -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-logging</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
